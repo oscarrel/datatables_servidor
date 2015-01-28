@@ -19,7 +19,7 @@ module.exports = function (grunt) {
   // Configurable paths
   var config = {
     app: 'app',
-    dist: '/var/www/html/datatables2'
+    dist: '/var/www/datatables2'
   };
 
   // Define the configuration for all the tasks
@@ -295,7 +295,7 @@ module.exports = function (grunt) {
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
-          dest: '<%= config.dist %>/.htaccess'
+          dest: '<%= config.dist %>/htaccess'
         }, {
           expand: true,
           dot: true,

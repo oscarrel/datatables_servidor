@@ -43,8 +43,8 @@ $columns = array(
 // SQL server connection information
 $sql_details = array(
     'user' => 'root',
-    'pass' => 'root',
-    'db'   => 'datatables',
+    'pass' => 'oscar0',
+    'db'   => 'labodental',
     'host' => 'localhost'
 );
  
