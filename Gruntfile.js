@@ -1,4 +1,4 @@
-// Generated on 2015-01-28 using
+// Generated on 2015-01-27 using
 // generator-webapp 0.5.1
 'use strict';
 
@@ -19,7 +19,7 @@ module.exports = function (grunt) {
   // Configurable paths
   var config = {
     app: 'app',
-    dist: 'dist'
+    dist: '/var/www/html/datatables2'
   };
 
   // Define the configuration for all the tasks
@@ -164,7 +164,7 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         ignorePath: /^\/|\.\.\//,
-        src: ['<%= config.app %>/index.html'],
+        src: ['<%= config.app %>/ejercicio*.html'],
         exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
       }
     },
@@ -191,7 +191,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/index.html'
+      html: '<%= config.app %>/ejercicio*.html'
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -290,7 +290,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'php/*.*'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
@@ -325,7 +326,12 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
-    }
+    },
+    shell: {
+      dist: {
+       command: 'rm -rf <%= config.dist %>/*'
+     }
+   }
   });
 
 
@@ -368,7 +374,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('build', [
-    'clean:dist',
+    'shell:dist',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
