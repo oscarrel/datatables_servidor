@@ -26,7 +26,22 @@
                "oAria": {
                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-               }
+               },
+               "aoColumns": [
+                  { "mData": "engine" },
+                  { "mData": "browser" },
+                  {
+                    "mData": "platform",
+                    "mRender": "[, ].name"
+                  }
+                ],
+                "aoColumnDefs": [ {
+                  "aTargets": [ 9 ],
+                  "mData": "download_link",
+                  "mRender": function ( data, type, full ) {
+                    return '<a href="'+data+'">Download</a>';
+                  }
+                } ]
            }
        });
    });
