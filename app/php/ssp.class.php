@@ -379,7 +379,8 @@ class SSP {
 				"mysql:host={$sql_details['host']};dbname={$sql_details['db']};charset=utf8",
 				$sql_details['user'],
 				$sql_details['pass'],
-				array( PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION )
+				/*juanda: lo añado para que devuelve bien el json, por tema de acentos, la conexión hay que hacerla con uft8*/
+				array( PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8" )
 			);
 		}
 		catch (PDOException $e) {
