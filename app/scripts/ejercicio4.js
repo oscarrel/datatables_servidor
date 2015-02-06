@@ -3,7 +3,29 @@
        $('#miTabla').DataTable({
            "processing": true,
            "serverSide": true,
-           "ajax": "php/cargar_clinicas.php",
+           "ajax": "php/cargar_clinicas_ej3.php",
+           "columns": [
+            { "data": "id_clinica" },
+            { "data": "nombre" },
+            { "data": "razonsocial" },
+            { "data": "cif" },
+            { "data": "localidad" },
+            { "data": "provincia" },
+            { "data": "direccion" },
+            { "data": "numclinica" },
+            { "data": "id_tarifa" },
+            { "data": "id_clinica",
+              "render": function(data, type, full, meta){
+                return '<a class="btn btn-info" role="button" href="php/editar_clinica.php?id_clinica=' + data +'">Editar</a>'+
+                '<a class="btn btn-warning" role="button" href="php/borrar_clinica.php?id_clinica=' + data +'">Borrar</a>';
+              }
+
+              
+              //<a class="btn btn-warning" href="php/borrar_clinica.php" role="button">Borrar</a>
+
+
+          }
+            ],
            'language': {
                "sProcessing": "Procesando...",
                "sLengthMenu": "Mostrar _MENU_ registros",

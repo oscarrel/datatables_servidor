@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+	,
+    "settings": {
+        "xdebug": {
+             "url": "http://localhost/datatables2/ejercicio3.php",
+             "super_globals": true,
+             "close_on_stop": true
+        }
+    }
+}

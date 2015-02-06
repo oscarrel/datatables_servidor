@@ -3,7 +3,18 @@
        $('#miTabla').DataTable({
            "processing": true,
            "serverSide": true,
-           "ajax": "php/cargar_clinicas.php",
+           "ajax": "php/cargar_clinicas_ej3.php",
+           "columns": [
+            { "data": "id_clinica" },
+            { "data": "nombre" },
+            { "data": "razonsocial" },
+            { "data": "cif" },
+            { "data": "localidad" },
+            { "data": "provincia" },
+            { "data": "direccion" },
+            { "data": "numclinica" },
+            { "data": "id_tarifa" }
+            ],
            'language': {
                "sProcessing": "Procesando...",
                "sLengthMenu": "Mostrar _MENU_ registros",

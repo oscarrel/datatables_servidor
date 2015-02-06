@@ -1,0 +1,409 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"char",
+				"ingres_charset"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/scripts/ejercicio4.js",
+			"settings":
+			{
+				"buffer_size": 2245,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/php/cargar_clinicas_ej3.php",
+			"settings":
+			{
+				"buffer_size": 1993,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/ejercicio4.html",
+			"settings":
+			{
+				"buffer_size": 1995,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"goto",
+				"GotoRowCol"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"setsyntax h",
+				"Set Syntax: HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/oscar/datatables_servidor",
+		"/home/oscar/datatables_servidor/app",
+		"/home/oscar/datatables_servidor/app/php",
+		"/home/oscar/datatables_servidor/app/scripts"
+	],
+	"file_history":
+	[
+		"/home/oscar/datatables_servidor/app/scripts/ejercicio3.js",
+		"/home/oscar/datatables_servidor/app/php/cargar_clinicas_ej3.php",
+		"/home/oscar/datatables_servidor/datatables_servidor.sublime-project",
+		"/home/oscar/datatables_servidor/Gruntfile.js",
+		"/home/oscar/datatables_servidor/datatables-servidor.sublime-project",
+		"/home/oscar/practica-validacion-formularios/app/php/validar_email_db.php",
+		"/home/oscar/practica-validacion-formularios/app/styles/main.css",
+		"/home/oscar/practica-validacion-formularios/bower.json~",
+		"/home/oscar/datatables_servidor/app/php/ssp.class.php",
+		"/home/oscar/ejercicios_datatables/app/ejercicio6.html",
+		"/home/oscar/ejercicios_datatables/app/scripts/ejercicio6_2.js",
+		"/home/oscar/ejercicios_datatables/app/scripts/ejercicio6.js",
+		"/home/oscar/ejercicios_datatables/app/scripts/datatables.spanish.lang",
+		"/home/oscar/ejercicios_datatables/app/scripts/Spanish.json",
+		"/home/oscar/practica_formulario/app/scripts/main.js",
+		"/home/oscar/ejercicios_datatables/app/ejercicio1.html",
+		"/home/oscar/ejercicios_datatables/Gruntfile.js",
+		"/home/oscar/ejercicios_datatables/app/ejercicio4.html",
+		"/home/oscar/ejercicios_datatables/app/ejercicio3.html",
+		"/home/oscar/ejercicios_datatables/app/ejercicio2.html",
+		"/home/oscar/ejercicios_datatables/app/scripts/main.js",
+		"/home/oscar/Escritorio/DWEC/Tema4 - AJAX y PLUGINS JQUERY/2 - Ejercicios/3 - Datatables/datatables/ejercicio2.html",
+		"/home/oscar/ejercicios_datatables/app/styles/ejercicio1.html",
+		"/usr/share/smarty/libs/sysplugins/smarty_internal_template.php",
+		"/var/www/datatables1/ejercicio1.html",
+		"/home/oscar/.config/sublime-text-3/Settings/SideBarEnhancements.json",
+		"/home/oscar/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/oscar/.config/sublime-text-3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/home/oscar/.config/sublime-text-3/Packages/SideBarEnhancements/Default (Linux).sublime-keymap",
+		"/home/oscar/practica_formulario/app/index.html",
+		"/home/oscar/practica_formulario/app/styles/style.css",
+		"/home/oscar/practica_formulario/app/styles/style2.css",
+		"/home/oscar/practica_formulario/app/styles/style1.css",
+		"/home/oscar/practica_formulario/.gitignore",
+		"/home/oscar/Escritorio/DWEC/Tema4 - AJAX y PLUGINS JQUERY/ejercicio1.html",
+		"/home/oscar/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"eof",
+			"htacc",
+			"shell",
+			"simpl",
+			"PDO",
+			"shell",
+			"var/www",
+			"dist",
+			"image",
+			"\"",
+			"ejercicio",
+			"wire",
+			"import\"",
+			"import \"",
+			"import",
+			"importg",
+			"margin"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/scripts/ejercicio4.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								892,
+								892
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/php/cargar_clinicas_ej3.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1993,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1649,
+								1649
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/ejercicio4.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1480,
+								1480
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 255.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"project": "datatables_servidor.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"restore_index":
+			{
+				"229":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"230":
+				{
+					"group": 1,
+					"index": 0
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.5,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 335.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
