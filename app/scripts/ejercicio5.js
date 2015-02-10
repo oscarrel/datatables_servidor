@@ -3,7 +3,7 @@
        $('#miTabla').DataTable({
            "processing": true,
            "serverSide": true,
-           "ajax": "php/cargar_clinicas_ej3.php",
+           "ajax": "php/cargar_vclinicas_ej5.php",
            "columns": [
             { "data": "id_clinica" },
             { "data": "nombre" },
@@ -14,6 +14,7 @@
             { "data": "direccion" },
             { "data": "numclinica" },
             { "data": "id_tarifa" },
+            { "data": "nombretarifa" }, 
             { "data": "id_clinica",
               "width": "200px",
               "render": function(data, type, full, meta){

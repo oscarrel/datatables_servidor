@@ -3,7 +3,7 @@
        $('#miTabla').DataTable({
            "processing": true,
            "serverSide": true,
-           "ajax": "php/cargar_clinicas_ej3.php",
+           "ajax": "php/cargar_vclinicas_ej6.php",
            "columns": [
             { "data": "id_clinica" },
             { "data": "nombre" },
@@ -14,6 +14,7 @@
             { "data": "direccion" },
             { "data": "numclinica" },
             { "data": "id_tarifa" },
+            { "data": "nombretarifa" }, 
             { "data": "id_clinica",
               "width": "200px",
               "render": function(data, type, full, meta){
@@ -52,4 +53,21 @@
                }
            }
        });
+      var table = $('#miTabla').DataTable();
+      var data = table
+            .rows()
+            .data();
+ 
+      console.log( 'The table has '+data.length+' records' );
    });
+   /*
+   $(document).ready(function() {
+    $("btn1").animate(
+      {width:'400px'}
+      , 10000)
+    
+  });
+*/
+/*
+row().cache( type )
+*/
