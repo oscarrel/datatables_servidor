@@ -1,6 +1,6 @@
 <?php
-$gaSql['user'] = "usuario";
-$gaSql['password'] = "password";
+$gaSql['user'] = "root";
+$gaSql['password'] = "oscar0";
 $gaSql['db'] = "labodental";
 $gaSql['server'] = "localhost";
 ?>

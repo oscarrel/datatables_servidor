@@ -18,8 +18,8 @@
             { "data": "id_clinica",
               "width": "200px",
               "render": function(data, type, full, meta){
-                return '<a class="btn btn-info" role="button" href="php/editar_clinica.php?id_clinica=' + data +'">Editar</a>'+
-                '<a class="btn btn-warning" role="button" href="php/borrar_clinica.php?id_clinica=' + data +'">Borrar</a>';
+                return '<a class="edit btn btn-info" role="button" href="php/modificar_clinica.php?id_clinica=' + data +'">Editar</a>'+
+                '<a class="del btn btn-warning" role="button" href="php/borrar_clinica.php?id_clinica=' + data +'">Borrar</a>';
               }
 
               
@@ -53,13 +53,37 @@
                }
            }
        });
-      var table = $('#miTabla').DataTable();
-      var data = table
-            .rows()
-            .data();
+
+
+
+
+      //var table = $('#miTabla').DataTable();
+      $('#miTabla').on( 'click', 'edit', function (e) {
+        e.preventDefault();
+        $('#miTabla').fadeOut(100);
+        $('#formulario').fadeIn(100);
+
+        var nRow = $( this ).parents('tr')[0];
+        aData=miTabla.row(nRow).data();
+        $("#id_clinica").val(aData.id_clinica);
+        $("#nombre").val(aData.nombre);
+        $("#numclinica").val(aData.numclinica);
+        $("#razonsocial").val(aData.razonsocial);
+        $("#cif").val(aData.cif);
+        $("#localidad").val(aData.localidad);
+        $("#provincia").val(aData.provincia);
+        $("#provincia").val(aData.provincia);
+        $("#cp").val(aData.cp);
+      });
+ });
  
-      console.log( 'The table has '+data.length+' records' );
-   });
+      
+
+
+
+
+      //console.log( 'The table has '+data.length+' records' );
+
    /*
    $(document).ready(function() {
     $("btn1").animate(
