@@ -28,17 +28,18 @@ $primaryKey = 'id_clinica';
 // The `db` parameter represents the column name in the database, while the `dt`
 // parameter represents the DataTables column identifier. In this case simple
 // indexes
+//Ixquierda, nombre de bd, a la derecha, nombre del json
 $columns = array(
-    array( 'db' => 'id_clinica', 'dt' => 'id_clinica' ),
+    array( 'db' => 'id_clinica', 'dt' => 'idClinica' ),
     array( 'db' => 'nombre',  'dt' => 'nombre' ),
-    array( 'db' => 'razonsocial',   'dt' => 'razonsocial' ),
+    array( 'db' => 'razonsocial',   'dt' => 'razonSocial' ),
     array( 'db' => 'cif',     'dt' => 'cif' ),
     array( 'db' => 'localidad', 'dt' => 'localidad' ),
     array( 'db' => 'provincia',  'dt' => 'provincia' ),
     array( 'db' => 'direccion',   'dt' => 'direccion' ),
-    array( 'db' => 'numclinica',     'dt' => 'numclinica' ),
-    array( 'db' => 'id_tarifa',     'dt' => 'id_tarifa' ),
-    array( 'db' => 'nombretarifa',     'dt' => 'nombretarifa' )
+    array( 'db' => 'numclinica',     'dt' => 'numClinica' ),
+    array( 'db' => 'id_tarifa',     'dt' => 'idTarifa' ),
+    array( 'db' => 'nombretarifa',     'dt' => 'nombreTarifa' )
 );
  
 // SQL server connection information

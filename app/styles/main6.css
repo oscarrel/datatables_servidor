@@ -1,0 +1,10 @@
+#formulario {
+  display:none;
+  marign-left:10px;
+}
+td .editarbtn{
+  margin-left: 4px;
+}
+body{
+  margin-right: 40px auto;
+}

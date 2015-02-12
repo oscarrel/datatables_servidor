@@ -1,21 +1,21 @@
    'use strict';
    $(document).ready(function() {
-       $('#miTabla').DataTable({
+       var miTabla = $('#miTabla').DataTable({
            "processing": true,
            "serverSide": true,
            "ajax": "php/cargar_vclinicas_ej6.php",
            "columns": [
-            { "data": "id_clinica" },
+            { "data": "idClinica" },
             { "data": "nombre" },
-            { "data": "razonsocial" },
+            { "data": "razonSocial" },
             { "data": "cif" },
             { "data": "localidad" },
             { "data": "provincia" },
             { "data": "direccion" },
-            { "data": "numclinica" },
-            { "data": "id_tarifa" },
-            { "data": "nombretarifa" }, 
-            { "data": "id_clinica",
+            { "data": "numClinica" },
+            { "data": "idTarifa" },
+            { "data": "nombreTarifa" }, 
+            { "data": "idClinica",
               "width": "200px",
               "render": function(data, type, full, meta){
                 return '<a class="edit btn btn-info" role="button" href="php/modificar_clinica.php?id_clinica=' + data +'">Editar</a>'+
@@ -58,20 +58,19 @@
 
 
       //var table = $('#miTabla').DataTable();
-      $('#miTabla').on( 'click', 'edit', function (e) {
+      $('#miTabla').on( 'click', '.edit', function (e) {
         e.preventDefault();
-        $('#miTabla').fadeOut(100);
-        $('#formulario').fadeIn(100);
+        $('#tabla').fadeOut(100);
+        $('#formulario').show(100);
 
         var nRow = $( this ).parents('tr')[0];
         aData=miTabla.row(nRow).data();
-        $("#id_clinica").val(aData.id_clinica);
+        $("#idClinica").val(aData.idClinica);
         $("#nombre").val(aData.nombre);
-        $("#numclinica").val(aData.numclinica);
-        $("#razonsocial").val(aData.razonsocial);
+        $("#numClinica").val(aData.numClinica);
+        $("#razonSocial").val(aData.razonSocial);
         $("#cif").val(aData.cif);
         $("#localidad").val(aData.localidad);
-        $("#provincia").val(aData.provincia);
         $("#provincia").val(aData.provincia);
         $("#cp").val(aData.cp);
       });
