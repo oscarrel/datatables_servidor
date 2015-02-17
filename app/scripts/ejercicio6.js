@@ -64,14 +64,17 @@
         $('#formulario').show(100);
 
         var nRow = $( this ).parents('tr')[0];
-        aData=miTabla.row(nRow).data();
+        var aData=miTabla.row(nRow).data();
         $("#idClinica").val(aData.idClinica);
         $("#nombre").val(aData.nombre);
         $("#numClinica").val(aData.numClinica);
         $("#razonSocial").val(aData.razonSocial);
         $("#cif").val(aData.cif);
         $("#localidad").val(aData.localidad);
-        $("#provincia").val(aData.provincia);
+        //$("#provincia").val(aData.provincia);
+        $('#provincia option').filter(function() {
+          return this.text.toLowerCase() === aData.provincia.toLowerCase();
+        }).attr('selected', true);
         $("#cp").val(aData.cp);
       });
  });
